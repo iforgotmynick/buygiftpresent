@@ -1,14 +1,20 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import {MenuComponent} from '@buygiftpresent/menu';
+import { MenubarModule } from 'primeng/menubar';
 
 @Component({
   standalone: true,
-  imports: [MenuComponent, RouterModule],
+  imports: [MenubarModule, RouterModule],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
+
+  readonly menuItems = [
+    { label: 'Home', icon: 'pi pi-home', routerLink: ['/home'] },
+    { label: 'Wishlist', icon: 'pi pi-file-edit', routerLink: ['/wishlist'] },
+  ];
+
   title = 'buygiftpresent';
 }
