@@ -1,0 +1,9 @@
+{
+  "generators": {
+    "feature-generator": {
+      "factory": "./tools/smn-plugin/src/generators/feature-generator/generator",
+      "schema": "./tools/smn-plugin/src/generators/feature-generator/schema.json",
+      "description": "feature-generator generator"
+    }
+  }
+}

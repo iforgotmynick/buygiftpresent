@@ -1,0 +1,5 @@
+<ng-container *ngIf="inProgress$ | async as inProgress">
+    <h2 *ngIf="!inProgress.visible"><%=dasherize(name)%></h2>
+
+    <p-skeleton *ngIf="inProgress.visible"></p-skeleton>
+</ng-container>
