@@ -16,10 +16,12 @@
     "baseUrl": ".",
     "paths": {
       "@buygiftpresent/api": ["libs/api/src/index.ts"],
+      "@buygiftpresent/core": ["libs/core/src/index.ts"],
       "@buygiftpresent/home": ["libs/pages/home/src/index.ts"],
       "@buygiftpresent/menu": ["libs/features/menu/src/index.ts"],
       "@buygiftpresent/smn-plugin": ["tools/smn-plugin/package.json"],
       "@buygiftpresent/wish-card": ["libs/shared/wish-card/src/index.ts"],
+      "@buygiftpresent/wish-list": ["libs/features/wish-list/src/index.ts"],
       "@buygiftpresent/wishlist": ["libs/pages/wishlist/src/index.ts"],
       "smn-plugin": ["tools/smn-plugin/package.json"]
     }
