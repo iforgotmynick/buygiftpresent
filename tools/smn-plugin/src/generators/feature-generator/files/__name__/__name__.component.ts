@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import { CommonModule } from '@angular/common';
 import {Observable} from 'rxjs';
 
 import {<%= classify(name) %>Mediator} from './ui/services/<%= dasherize(name) %>.mediator';
@@ -6,9 +7,11 @@ import {<%= classify(name) %>Data} from './data/<%= dasherize(name) %>.data';
 import {<%= classify(name) %>Core} from './core/<%= dasherize(name) %>.core';
 
 @Component({
-  selector: 'app-<%=dasherize(name)%>',
+  selector: 'lib-<%=dasherize(name)%>',
   templateUrl: '<%=dasherize(name)%>.component.html',
   styleUrls: ['./<%=dasherize(name)%>.component.scss'],
+  standalone: true,
+  imports: [CommonModule],
   providers: [
     <%= classify(name) %>Mediator, 
     { provide: <%= classify(name) %>Core, useClass: <%= classify(name) %>Data },
