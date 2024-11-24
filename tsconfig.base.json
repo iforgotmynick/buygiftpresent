@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@buygiftpresent/api": ["libs/api/src/index.ts"],
       "@buygiftpresent/home": ["libs/pages/home/src/index.ts"],
       "@buygiftpresent/menu": ["libs/features/menu/src/index.ts"],
       "@buygiftpresent/wishlist": ["libs/pages/wishlist/src/index.ts"]
