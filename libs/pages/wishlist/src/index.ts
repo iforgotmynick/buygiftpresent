@@ -1,1 +1,1 @@
-export * from './lib/wishlist/wishlist.component';
+export * from './lib/wishlist.component';

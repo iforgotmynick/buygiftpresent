@@ -4,7 +4,10 @@ import { MenubarModule } from 'primeng/menubar';
 
 @Component({
   standalone: true,
-  imports: [MenubarModule, RouterModule],
+  imports: [
+    MenubarModule, 
+    RouterModule,
+  ],
   selector: 'app-root',
   templateUrl: './app.component.html',
 })
