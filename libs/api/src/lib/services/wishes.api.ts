@@ -7,7 +7,7 @@ import { UpdateWishDto } from '../models/update-wish.dto';
 
 @Injectable({ providedIn: 'root' })
 export class WishesApi {
-  private readonly API_URL = '/wishes';
+  private readonly API_URL = `/api/wishes`;
 
   constructor(private readonly http: HttpClient) {}
 

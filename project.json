@@ -71,6 +71,9 @@
           "buildTarget": "buygiftpresent:build:development"
         }
       },
+      "options": {
+        "proxyConfig": "proxy/proxy.conf.json"
+      },
       "defaultConfiguration": "development"
     },
     "extract-i18n": {
