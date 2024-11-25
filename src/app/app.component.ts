@@ -1,10 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+
 import { MenubarModule } from 'primeng/menubar';
 
 @Component({
   standalone: true,
   imports: [
+    CommonModule,
     MenubarModule, 
     RouterModule,
   ],
