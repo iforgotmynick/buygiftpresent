@@ -28,7 +28,13 @@ module.exports = [
   },
   {
     files: ['**/*.html'],
-    // Override or add rules here
-    rules: {},
+    rules: {
+      "@angular-eslint/template/elements-content": [
+        "error",
+        {
+          "allowList": ["pButton"]
+        }
+      ]
+    },
   },
 ];
