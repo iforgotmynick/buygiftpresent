@@ -9,7 +9,7 @@ import { MenuItem } from 'primeng/api';
   standalone: true,
   imports: [CommonModule, MenubarModule],
   templateUrl: './navigation-menu.component.html',
-  styleUrl: './navigation-menu.component.css',
+  styleUrl: './navigation-menu.component.scss',
 })
 export class NavigationMenuComponent {
   readonly menuItems: MenuItem[] = [
