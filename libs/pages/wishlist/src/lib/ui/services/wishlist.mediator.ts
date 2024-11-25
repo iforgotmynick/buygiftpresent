@@ -24,7 +24,7 @@ export class WishlistMediator {
   init(): void {
     this.core
       .getLast$()
-      .pipe(tap((wishes: Wish[]) => console.log(wishes)))
+      .pipe(tap((wishes: Wish[]) => this._lastWishes$.next(wishes)))
       .subscribe();
 
     this.core

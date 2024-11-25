@@ -1,3 +1,26 @@
-@for (wish of wishes; track wish.id) {
-  <lib-wish-card [wish]="wish"></lib-wish-card>
-}
+<p-carousel [value]="wishes" [numVisible]="3" [numScroll]="1">
+  <ng-template let-wish pTemplate="item">
+    <div class="border-1 surface-border border-round m-2 p-3">
+      <div class="mb-3">
+        <div class="relative mx-auto">
+          <img
+            [src]="wish.image"
+            [alt]="wish.name"
+            class="w-full border-round"
+          />
+        </div>
+      </div>
+      <div class="mb-3 font-medium">
+        {{ wish.name }}
+      </div>
+      <div class="flex justify-content-between align-items-center">
+        <div class="mt-0 font-semibold text-xl">
+          {{ '$' + wish.price }}
+        </div>
+        <span>
+          <p-button icon="pi pi-shopping-cart" styleClass="ml-2" />
+        </span>
+      </div>
+    </div>
+  </ng-template>
+</p-carousel>

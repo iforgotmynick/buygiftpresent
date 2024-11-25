@@ -1,8 +1,8 @@
 <div>
-  <h4>Last wishes</h4>
-  <lib-wish-list [wishes]="(lastWishes$ | async) ?? []"></lib-wish-list>
-</div>
-<div>
   <h4>Top wishes</h4>
   <lib-wish-list [wishes]="(topWishes$ | async) ?? []"></lib-wish-list>
+</div>
+<div>
+  <h4>Last wishes</h4>
+  <lib-wish-list [wishes]="(lastWishes$ | async) ?? []"></lib-wish-list>
 </div>
