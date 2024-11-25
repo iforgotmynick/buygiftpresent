@@ -1,82 +1,60 @@
-# Buygiftpresent
+# BuyGiftPresent
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+BuyGiftPresent is a work-in-progress (WIP) frontend application designed to enhance the gifting experience by allowing users to create and share wishlists with friends and family.
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
+## Features
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/getting-started/tutorials/angular-standalone-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+- **User-Friendly Interface**: Intuitive design for easy navigation and wishlist management.
+- **Wishlist Creation**: Users can create, edit, and manage multiple wishlists.
+- **Sharing Capabilities**: Easily share wishlists with others to streamline the gifting process.
 
-## Finish your CI setup
+## Tech Stack
 
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/2kSJvkCyOd)
+- **Frontend Framework**: [Angular](https://angular.dev/) - A Typescript library for building user interfaces.
 
+## Backend Dependency
 
-## Run tasks
+This frontend application relies on the [kupipodariday](https://github.com/iforgotmynick/kupipodariday) backend service for data management and API interactions. Ensure that the backend service is set up and running to enable full functionality of the frontend application.
 
-To run the dev server for your app, use:
+## Installation
 
-```sh
-npx nx serve buygiftpresent
-```
+1. **Clone the repository**:
 
-To create a production bundle:
+   ```bash
+   git clone https://github.com/iforgotmynick/buygiftpresent.git
 
-```sh
-npx nx build buygiftpresent
-```
+2. **Navigate to the project directory**:
 
-To see all available targets to run for a project, run:
+   ```bash
+   cd buygiftpresent
 
-```sh
-npx nx show project buygiftpresent
-```
+3. **Install dependencies**:
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+   ```bash
+   npm install
+   
+3. **Run the application**:
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+- Development mode:
 
-## Add new projects
+   ```bash
+   npm start
+   
+- The application will be accessible at http://localhost:4200.
 
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
+## Usage
+- Access the application at http://localhost:4200.
+- Register a new account or log in with existing credentials.
+- Create, manage, and share your wishlists.
 
-Use the plugin's generator to create new projects.
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-To generate a new application, use:
+## Acknowledgements
+- **[Angular](https://angular.dev/)**: For the frontend framework.
+- **[Backend](https://github.com/iforgotmynick/kupipodariday)**: My backend solution.
+- **[Yandex Practicum NodeJS](https://practicum.yandex.ru/profile/backend-nodejs)**: For the idea/inspiration
+  
+## Disclaimer
 
-```sh
-npx nx g @nx/angular:app demo
-```
-
-To generate a new library, use:
-
-```sh
-npx nx g @nx/angular:lib mylib
-```
-
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
-
-[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Install Nx Console
-
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
-
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
-
-Learn more:
-
-- [Learn more about this workspace setup](https://nx.dev/getting-started/tutorials/angular-standalone-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+Felt like making this public for now—might delete later. This project is a work in progress (WIP) and not intended for production use at the moment.
